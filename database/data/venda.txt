@@ -1,0 +1,4 @@
+banana|5|frutas|caio|joão|3|16/05/2024
+leite|4|laticínios|caio|joão|3|16/04/2024
+leite|4|laticínios|caio|joão|3|16/05/2024
+leite|4|laticínios|caio|joão|3|16/05/2024

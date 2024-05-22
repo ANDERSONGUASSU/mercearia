@@ -1,0 +1,6 @@
+legumes
+suplementos
+frios
+frutas
+laticínios
+Doces

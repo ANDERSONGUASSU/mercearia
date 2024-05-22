@@ -1,0 +1,9 @@
+1|jabuticaba|5.0|frutas|5
+3|pepino|7.0|legumes|8
+4|queijo|8.0|frios|90
+5|way|80.0|suplementos|9
+6|leite|5.6|laticínios|80
+7|bala|0.5|Doces|100
+8|pirulito|1.0|Doces|20
+9|beterraba|2.5|legumes|20
+10|teste|10.0|legumes|50
