@@ -1,4 +1,100 @@
-banana|5|frutas|caio|joão|3|16/05/2024
-leite|4|laticínios|caio|joão|3|16/04/2024
-leite|4|laticínios|caio|joão|3|16/05/2024
-leite|4|laticínios|caio|joão|3|16/05/2024
+3|manga|3.5|frutas|ANDERSON|Comprador|4|14.0|04/02/2024 17:35:56
+10|teste|10.0|legumes|ANDERSON|12345678901|5|50.0|27/01/2024 23:11:01
+4|tomate|2.8|legumes|Maria Oliveira|Comprador|1|2.8|08/03/2024 00:26:05
+3|manga|3.5|frutas|ANDERSON|76543210122|4|14.0|21/05/2024 16:15:57
+10|teste|10.0|legumes|ANDERSON|76543210122|2|20.0|25/01/2024 03:36:48
+4|tomate|2.8|legumes|Maria Oliveira|12345678901|3|8.39|22/02/2024 05:20:22
+3|manga|3.5|frutas|Maria Oliveira|Comprador|3|10.5|26/03/2024 10:32:56
+1|jabuticaba|5.0|frutas|Maria Oliveira|Comprador|4|20.0|05/04/2024 13:37:06
+6|leite|5.6|laticínios|João Silva|10923456788|3|16.79|12/03/2024 19:46:14
+1|jabuticaba|5.0|frutas|João Silva|12345678901|4|20.0|18/01/2024 07:23:26
+4|tomate|2.8|legumes|Maria Oliveira|76543210122|4|11.2|14/02/2024 10:37:51
+4|tomate|2.8|legumes|ANDERSON|76543210122|1|2.8|14/02/2024 11:15:49
+4|tomate|2.8|legumes|ANDERSON|76543210122|4|11.2|13/01/2024 06:25:55
+4|tomate|2.8|legumes|João Silva|76543210122|4|11.2|24/03/2024 06:54:21
+10|teste|10.0|legumes|ANDERSON|Comprador|5|50.0|06/03/2024 22:16:14
+4|tomate|2.8|legumes|ANDERSON|12345678901|5|14.0|16/01/2024 19:04:44
+4|tomate|2.8|legumes|João Silva|10923456788|3|8.39|10/04/2024 00:52:19
+4|tomate|2.8|legumes|João Silva|76543210122|5|14.0|17/01/2024 00:30:15
+6|leite|5.6|laticínios|ANDERSON|76543210122|3|16.79|16/01/2024 07:14:46
+3|manga|3.5|frutas|João Silva|Comprador|1|3.5|17/05/2024 16:10:16
+3|manga|3.5|frutas|João Silva|10923456788|4|14.0|03/03/2024 02:57:59
+4|tomate|2.8|legumes|Maria Oliveira|Comprador|3|8.39|05/03/2024 05:25:25
+3|manga|3.5|frutas|ANDERSON|Comprador|2|7.0|19/02/2024 16:43:01
+6|leite|5.6|laticínios|ANDERSON|76543210122|5|28.0|18/05/2024 08:33:17
+10|teste|10.0|legumes|Maria Oliveira|12345678901|1|10.0|07/05/2024 10:28:14
+3|manga|3.5|frutas|João Silva|76543210122|2|7.0|12/05/2024 23:36:40
+6|leite|5.6|laticínios|João Silva|76543210122|4|22.4|03/04/2024 22:14:25
+6|leite|5.6|laticínios|ANDERSON|12345678901|4|22.4|06/01/2024 05:14:26
+1|jabuticaba|5.0|frutas|ANDERSON|Comprador|3|15.0|01/01/2024 11:34:22
+3|manga|3.5|frutas|João Silva|12345678901|5|17.5|16/02/2024 06:26:44
+10|teste|10.0|legumes|João Silva|12345678901|4|40.0|26/01/2024 22:30:10
+6|leite|5.6|laticínios|João Silva|10923456788|2|11.2|09/02/2024 23:16:44
+1|jabuticaba|5.0|frutas|ANDERSON|76543210122|5|25.0|05/01/2024 08:03:17
+4|tomate|2.8|legumes|João Silva|Comprador|5|14.0|14/03/2024 15:48:09
+4|tomate|2.8|legumes|ANDERSON|10923456788|5|14.0|02/02/2024 18:18:30
+4|tomate|2.8|legumes|Maria Oliveira|Comprador|3|8.39|09/04/2024 06:00:15
+3|manga|3.5|frutas|Maria Oliveira|12345678901|3|10.5|18/04/2024 08:25:22
+3|manga|3.5|frutas|Maria Oliveira|Comprador|4|14.0|26/01/2024 08:30:25
+1|jabuticaba|5.0|frutas|João Silva|12345678901|1|5.0|05/01/2024 11:40:05
+10|teste|10.0|legumes|João Silva|12345678901|3|30.0|17/05/2024 15:43:49
+6|leite|5.6|laticínios|ANDERSON|10923456788|5|28.0|02/05/2024 02:29:02
+3|manga|3.5|frutas|João Silva|10923456788|5|17.5|25/02/2024 06:10:57
+3|manga|3.5|frutas|João Silva|Comprador|1|3.5|24/01/2024 01:47:45
+4|tomate|2.8|legumes|Maria Oliveira|12345678901|4|11.2|29/01/2024 11:33:48
+4|tomate|2.8|legumes|Maria Oliveira|76543210122|3|8.39|03/04/2024 15:31:48
+3|manga|3.5|frutas|Maria Oliveira|12345678901|3|10.5|07/05/2024 05:17:58
+4|tomate|2.8|legumes|ANDERSON|10923456788|4|11.2|04/03/2024 17:41:41
+4|tomate|2.8|legumes|ANDERSON|76543210122|1|2.8|23/04/2024 00:26:35
+4|tomate|2.8|legumes|João Silva|Comprador|4|11.2|01/01/2024 10:17:49
+1|jabuticaba|5.0|frutas|João Silva|10923456788|2|10.0|01/01/2024 12:20:37
+6|leite|5.6|laticínios|ANDERSON|12345678901|5|28.0|17/04/2024 13:13:50
+6|leite|5.6|laticínios|Maria Oliveira|12345678901|1|5.6|22/01/2024 14:11:18
+1|jabuticaba|5.0|frutas|Maria Oliveira|12345678901|2|10.0|27/02/2024 08:33:31
+4|tomate|2.8|legumes|Maria Oliveira|10923456788|3|8.39|22/01/2024 05:32:15
+6|leite|5.6|laticínios|ANDERSON|76543210122|2|11.2|19/02/2024 19:49:50
+4|tomate|2.8|legumes|Maria Oliveira|12345678901|4|11.2|12/03/2024 20:36:25
+4|tomate|2.8|legumes|ANDERSON|76543210122|5|14.0|03/03/2024 15:51:06
+1|jabuticaba|5.0|frutas|Maria Oliveira|10923456788|3|15.0|24/01/2024 18:36:39
+10|teste|10.0|legumes|Maria Oliveira|12345678901|3|30.0|28/01/2024 11:01:23
+4|tomate|2.8|legumes|Maria Oliveira|76543210122|4|11.2|07/02/2024 07:21:17
+4|tomate|2.8|legumes|João Silva|Comprador|4|11.2|12/01/2024 08:59:26
+10|teste|10.0|legumes|João Silva|10923456788|1|10.0|27/04/2024 00:11:29
+3|manga|3.5|frutas|Maria Oliveira|10923456788|3|10.5|12/02/2024 11:01:25
+1|jabuticaba|5.0|frutas|João Silva|Comprador|4|20.0|14/01/2024 21:09:40
+10|teste|10.0|legumes|João Silva|Comprador|5|50.0|09/05/2024 20:39:12
+10|teste|10.0|legumes|Maria Oliveira|Comprador|2|20.0|07/04/2024 04:11:35
+1|jabuticaba|5.0|frutas|João Silva|Comprador|5|25.0|11/04/2024 18:12:17
+6|leite|5.6|laticínios|Maria Oliveira|76543210122|4|22.4|10/05/2024 08:01:29
+3|manga|3.5|frutas|ANDERSON|76543210122|3|10.5|13/02/2024 06:32:47
+3|manga|3.5|frutas|Maria Oliveira|10923456788|3|10.5|18/03/2024 22:28:05
+10|teste|10.0|legumes|Maria Oliveira|12345678901|5|50.0|07/01/2024 20:30:21
+6|leite|5.6|laticínios|Maria Oliveira|10923456788|5|28.0|05/05/2024 14:13:30
+3|manga|3.5|frutas|Maria Oliveira|12345678901|5|17.5|04/02/2024 15:28:47
+1|jabuticaba|5.0|frutas|Maria Oliveira|12345678901|2|10.0|30/01/2024 03:59:16
+1|jabuticaba|5.0|frutas|ANDERSON|10923456788|4|20.0|08/02/2024 21:35:28
+10|teste|10.0|legumes|João Silva|12345678901|3|30.0|10/01/2024 19:33:15
+10|teste|10.0|legumes|Maria Oliveira|12345678901|5|50.0|01/04/2024 00:12:46
+1|jabuticaba|5.0|frutas|ANDERSON|76543210122|4|20.0|13/03/2024 06:06:52
+10|teste|10.0|legumes|Maria Oliveira|12345678901|4|40.0|25/03/2024 13:56:45
+4|tomate|2.8|legumes|ANDERSON|12345678901|5|14.0|30/04/2024 18:06:31
+1|jabuticaba|5.0|frutas|João Silva|10923456788|4|20.0|03/03/2024 23:11:44
+1|jabuticaba|5.0|frutas|Maria Oliveira|76543210122|3|15.0|02/01/2024 05:52:04
+10|teste|10.0|legumes|ANDERSON|12345678901|4|40.0|04/03/2024 03:13:30
+4|tomate|2.8|legumes|ANDERSON|Comprador|2|5.6|29/04/2024 17:34:58
+10|teste|10.0|legumes|Maria Oliveira|10923456788|2|20.0|19/05/2024 12:53:49
+4|tomate|2.8|legumes|Maria Oliveira|Comprador|3|8.39|11/05/2024 03:54:33
+10|teste|10.0|legumes|João Silva|12345678901|1|10.0|03/02/2024 10:14:38
+6|leite|5.6|laticínios|Maria Oliveira|76543210122|1|5.6|02/05/2024 07:30:51
+3|manga|3.5|frutas|ANDERSON|76543210122|5|17.5|29/02/2024 15:34:22
+6|leite|5.6|laticínios|João Silva|76543210122|2|11.2|15/03/2024 20:28:46
+10|teste|10.0|legumes|Maria Oliveira|Comprador|5|50.0|25/03/2024 10:08:16
+6|leite|5.6|laticínios|Maria Oliveira|Comprador|2|11.2|08/04/2024 01:45:42
+10|teste|10.0|legumes|Maria Oliveira|76543210122|5|50.0|08/04/2024 17:50:05
+6|leite|5.6|laticínios|ANDERSON|12345678901|1|5.6|22/04/2024 01:20:43
+1|jabuticaba|5.0|frutas|ANDERSON|76543210122|5|25.0|20/05/2024 23:05:13
+3|manga|3.5|frutas|João Silva|Comprador|3|10.5|21/05/2024 09:48:12
+3|manga|3.5|frutas|João Silva|76543210122|5|17.5|12/01/2024 07:25:37
+4|tomate|2.8|legumes|Maria Oliveira|Comprador|1|2.8|17/02/2024 05:14:00
+4|tomate|2.8|legumes|João Silva|12345678901|2|5.6|01/02/2024 16:23:03
+4|tomate|2.8|legumes|João Silva|12345678901|1|2.8|18/04/2024 04:45:04

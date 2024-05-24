@@ -59,3 +59,31 @@ def setup_ui(self, titulo):
         font=("Consolas", 22),
     )
     self.lista_texbox.pack()
+
+
+def setup_ui_vendas(self, titulo):
+    self.titulo_label = ctk.CTkLabel(
+        self.root,
+        text=titulo,
+        font=("Arial", 30),
+        justify="center",
+        height=1,
+        fg_color="#F9F9FA",
+        corner_radius=10,
+    )
+    self.titulo_label.pack(pady=10)
+
+    self.frame_botoes = ctk.CTkFrame(self.root)
+    self.frame_lista = ctk.CTkFrame(self.root)
+    self.root.grid_rowconfigure(0, weight=0)
+    self.root.grid_rowconfigure(1, weight=1)
+    self.frame_botoes.pack(pady=20)
+    self.frame_lista.pack(fill="both", expand=True)
+
+    # Título da aba "Clientes"
+
+    # Criar botões "Cadastrar", "Alterar" e "Excluir"
+    self.dash_button = ctk.CTkButton(
+        self.frame_botoes, text="Dashbord", command=self.dash
+    )
+    self.dash_button.pack(side=ctk.LEFT, padx=10)

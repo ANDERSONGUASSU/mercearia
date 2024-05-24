@@ -1,9 +1,69 @@
-1|jabuticaba|5.0|frutas|5
-3|pepino|7.0|legumes|8
-4|queijo|8.0|frios|90
+1|jabuticaba|5.0|frutas|9
+3|pepino|7.0|legumes|0
+4|queijo|8.0|frios|0
 5|way|80.0|suplementos|9
-6|leite|5.6|laticínios|80
+6|leite|5.6|laticínios|78
 7|bala|0.5|Doces|100
 8|pirulito|1.0|Doces|20
 9|beterraba|2.5|legumes|20
-10|teste|10.0|legumes|50
+10|teste|10.0|legumes|45
+11|Maçã|3.0|Frutas|100
+12|Banana|2.5|Frutas|100
+13|Uva|4.0|Frutas|100
+14|Tomate|3.5|Legumes|100
+15|Cenoura|2.0|Legumes|100
+16|Brócolis|5.0|Legumes|100
+17|Presunto|10.0|Frios|100
+18|Salame|12.0|Frios|100
+19|Mortadela|8.0|Frios|100
+20|Creatina|60.0|Suplementos|100
+21|BCAA|50.0|Suplementos|100
+22|Multivitamínico|30.0|Suplementos|100
+23|Iogurte|4.0|Laticínios|100
+24|Manteiga|6.0|Laticínios|100
+25|Creme de Leite|3.5|Laticínios|100
+26|Chocolate|2.0|Doces|100
+27|Goma de Mascar|1.5|Doces|100
+28|Paçoca|0.8|Doces|100
+29|Suco de Laranja|3.0|Bebidas|100
+30|Refrigerante|5.0|Bebidas|100
+31|Água de Coco|4.5|Bebidas|100
+32|Filé de Frango|10.0|Carnes|100
+33|Picanha|40.0|Carnes|100
+34|Carne Moída|15.0|Carnes|100
+35|Pão Francês|0.5|Pães|100
+36|Pão de Forma|3.0|Pães|100
+37|Croissant|2.5|Pães|100
+38|Azeitona|3.5|Conservas|100
+39|Pepino em Conserva|4.0|Conservas|100
+40|Palmito|6.0|Conservas|100
+41|Macarrão|2.0|Massas|100
+42|Lasanha|8.0|Massas|100
+43|Nhoque|5.0|Massas|100
+44|Arroz|4.0|Grãos|100
+45|Feijão|5.0|Grãos|100
+46|Lentilha|3.5|Grãos|100
+47|Aveia|3.0|Cereais|100
+48|Granola|6.0|Cereais|100
+49|Milho em Flocos|2.5|Cereais|100
+50|Sal|1.0|Temperos|100
+51|Pimenta|2.0|Temperos|100
+52|Orégano|1.5|Temperos|100
+53|Molho de Tomate|2.5|Molhos|100
+54|Molho Barbecue|4.0|Molhos|100
+55|Molho Shoyu|3.0|Molhos|100
+56|Óleo de Soja|4.0|Óleos|100
+57|Azeite de Oliva|10.0|Óleos|100
+58|Óleo de Canola|5.0|Óleos|100
+59|Salmão|20.0|Peixes|100
+60|Tilápia|10.0|Peixes|100
+61|Bacalhau|25.0|Peixes|100
+62|Camarão|30.0|Frutos do Mar|100
+63|Lula|20.0|Frutos do Mar|100
+64|Mexilhão|15.0|Frutos do Mar|100
+65|Pizza Congelada|15.0|Congelados|100
+66|Hambúrguer Congelado|10.0|Congelados|100
+67|Sopa Congelada|8.0|Congelados|100
+68|Batata Chips|5.0|Snacks|100
+69|Pipoca|3.0|Snacks|100
+70|Amendoim|4.0|Snacks|100

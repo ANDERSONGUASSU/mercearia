@@ -1,14 +1,17 @@
 import customtkinter as ctk
+from controller.controlerCaixa import ControllerCaixa
 from controller.controllerVenda import ControllerVenda
 from controller.controllerEstoque import ControllerEstoque
-from database.dao import DaoPessoas, DaoFuncionario
+from database.dao import DaoPessoas, DaoFuncionario, DaoEstoque
 
 
 class CaixaView:
     def __init__(self, root):
         self.root = root
+        self.controller_caixa = ControllerCaixa()
         self.controller_venda = ControllerVenda()
         self.controller_estoque = ControllerEstoque()
+        self.dao_estoque = DaoEstoque.ler()
         self.dao_cliente = DaoPessoas.ler()
         self.dao_funcionario = DaoFuncionario.ler()
         self.setup_ui()
@@ -56,7 +59,7 @@ class CaixaView:
 
         # Dropdown para selecionar funcionário
         self.funcionarios = ["Selecionar Funcionário"]
-        self.lista_funcionarios()
+        ControllerCaixa.lista_funcionarios(self)
 
         # Exemplo de lista de funcionários
         self.funcionario_dropdown = ctk.CTkOptionMenu(
@@ -66,7 +69,7 @@ class CaixaView:
 
         # Dropdown para selecionar comprador
         self.compradores = ["Comprador"]
-        self.lista_clientes()
+        ControllerCaixa.lista_clientes(self)
         self.comprador_dropdown = ctk.CTkOptionMenu(
             self.frame1, values=self.compradores, state="disabled"
         )
@@ -109,7 +112,9 @@ class CaixaView:
         self.preco_entry.grid(row=3, column=1, padx=10, pady=10, sticky="nsew")
 
         self.total_label = ctk.CTkLabel(
-            self.frame1, text="Valor Total", font=estilo_fonte,
+            self.frame1,
+            text="Valor Total",
+            font=estilo_fonte,
         )
         self.total_label.grid(row=4, column=0, padx=10, pady=10, sticky="nsew")
 
@@ -172,18 +177,6 @@ class CaixaView:
         )
         self.total_compra_label.pack(padx=10, pady=10, fill="x")
 
-    def lista_funcionarios(self):
-        for func in self.dao_funcionario:
-            funcionario = f"{func.nome}|{func.cpf}"
-            self.funcionarios.append(funcionario)
-        return
-
-    def lista_clientes(self):
-        for pessoa in self.dao_cliente:
-            cliente = f"{pessoa.nome}|{pessoa.cpf}"
-            self.compradores.append(cliente)
-        return
-
     def ao_alterar_cod_produto(self, event):
         cod_produto = self.cod_produto_entry.get()
         produto = self.controller_estoque.buscarNomeProdutoPorCodigo(cod_produto)
@@ -229,9 +222,8 @@ class CaixaView:
         self.finalizar_venda_button.configure(fg_color=self.color_button)
 
     def finalizar_venda(self):
+        # Desabilita os campos e botão de finalizar venda
         self.finalizar_venda_button.configure(state="disabled")
-        self.comprador_dropdown.set(self.funcionarios[0])
-        self.comprador_dropdown.configure(state="disabled")
         self.cod_produto_entry.delete(0, "end")
         self.cod_produto_entry.configure(state="disabled")
         self.quantidade_entry.delete(0, "end")
@@ -243,24 +235,71 @@ class CaixaView:
         self.finalizar_venda_button.configure(fg_color=self.color)
         self.iniciar_venda_button.configure(state="normal")
         self.iniciar_venda_button.configure(fg_color=self.color_button)
+        self.recipiente_texbox.delete("1.0", ctk.END)
+
+        for item in self.itens_registrados:
+            ControllerVenda.cadastrarVenda(
+                self,
+                id=item["id"],
+                nome=item["nome"],
+                preco=item["preco"],
+                categoria=item["categoria"],
+                vendedor=item["vendedor"],
+                comprador=item["comprador"],
+                quantidadeVendida=item["quantidadeVendida"],
+                valorTotal=item["valorTotal"],
+            )
+        self.itens_registrados.clear()
+        self.comprador_dropdown.set(self.compradores[0])
+        self.comprador_dropdown.configure(state="disabled")
+        self.status_label.configure(
+            text="Venda finalizada com sucesso", fg_color="#5cb85c"
+        )
 
     def registre_produto(self, event):
         cod_produto = self.cod_produto_entry.get()
         produto_nome = self.produto_nome_label.cget("text")
-        quantidade = self.quantidade_entry.get()
-        preco = self.preco_entry.get()
-        total = self.total_entry.get()
+        quantidade = int(self.quantidade_entry.get())
+        preco = float(self.preco_entry.get())
+        total = float(self.total_entry.get())
+        vendedor = self.funcionario_dropdown.get()
+        comprador = self.comprador_dropdown.get()
 
-        self.itens_registrados.append(
-            {
-                "cod": cod_produto,
-                "nome": produto_nome,
-                "qtd": quantidade,
-                "preco": preco,
-                "total": total,
-            }
+        estoque = DaoEstoque.ler()
+        produto = next(
+            (item for item in estoque if item.produto.id == cod_produto), None
         )
-        self.atualiza_recipiente()
+
+        if produto:
+            if produto.quantidade < quantidade:
+                self.status_label.configure(
+                    text="Quantidade insuficiente no estoque", fg_color="#FF3E36"
+                )
+            else:
+                produto.quantidade -= quantidade
+
+                self.itens_registrados.append(
+                    {
+                        "id": cod_produto,
+                        "nome": produto_nome,
+                        "preco": preco,
+                        "categoria": produto.produto.categoria,
+                        "vendedor": vendedor,
+                        "comprador": comprador,
+                        "quantidadeVendida": quantidade,
+                        "valorTotal": total,
+                    }
+                )
+                self.status_label.configure(
+                    text="Produto registrado com sucesso", fg_color="#5cb85c"
+                )
+                self.atualiza_recipiente()
+
+                ControllerCaixa.atualizarEstoque(self, estoque)
+        else:
+            self.status_label.configure(
+                text="Produto não encontrado no estoque", fg_color="#FF3E36"
+            )
 
     def atualiza_recipiente(self):
         self.recipiente_texbox.delete("1.0", ctk.END)
@@ -269,13 +308,13 @@ class CaixaView:
         self.recipiente_texbox.insert(ctk.END, header)
         for item in self.itens_registrados:
             formatted_item = (
-                f"Código: {item['cod']} | Nome: {item['nome']} | Quantidade: {item['qtd']} | "
-                f"Preço: R${item['preco']} | Total: R${item['total']}\n"
+                f"Código: {item['id']} | Nome: {item['nome']} | Quantidade: {item['quantidadeVendida']} | "
+                f"Preço: R${item['preco']} | Total: R${item['valorTotal']}\n"
             )
             self.recipiente_texbox.insert(ctk.END, formatted_item)
 
         # Calcula e adiciona o total
-        total = sum(float(item["total"]) for item in self.itens_registrados)
+        total = sum(float(item["valorTotal"]) for item in self.itens_registrados)
         total_text = f"\n\n{'='*40}\nTotal: R${total:.2f}\n"
         self.recipiente_texbox.insert(ctk.END, total_text)
         subtotal = f"Subtotal: R${total:.2f}"

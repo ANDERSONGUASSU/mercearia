@@ -1,6 +1,20 @@
-legumes
-suplementos
-frios
-frutas
-laticínios
+Legumes
+Suplementos
+Frios
+Frutas
+Laticínios
 Doces
+Bebidas
+Carnes
+Pães
+Conservas
+Massas
+Grãos
+Cereais
+Temperos
+Molhos
+Óleos
+Peixes
+Frutos do Mar
+Congelados
+Snacks

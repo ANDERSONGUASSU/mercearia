@@ -81,14 +81,6 @@ class ControllerEstoque:
             print(mensagem)
             return False, mensagem
 
-        novo_nome_existente = any(
-            item.produto.nome == novoNome for item in self.estoque
-        )
-        if novo_nome_existente:
-            mensagem = "Produto com o novo nome já cadastrado"
-            print(mensagem)
-            return False, mensagem
-
         for item in self.estoque:
             if item.produto.id == id:
                 item.produto.nome = novoNome

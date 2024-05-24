@@ -41,6 +41,7 @@ class DaoVenda:
                 f"{venda.vendedor}|"
                 f"{venda.comprador}|"
                 f"{venda.quantidadeVendida}|"
+                f"{venda.valorTotal}|"
                 f"{venda.data}\n"
             )
 
@@ -53,7 +54,14 @@ class DaoVenda:
         vend = []
         for i in cls.venda:
             vend.append(
-                Venda(Produtos(i[0], i[1], i[2], i[3]), i[3], i[4], int(i[5]), i[6])
+                Venda(
+                    Produtos(i[0], i[1], float(i[2]), i[3]),
+                    i[4],
+                    i[5],
+                    int(i[6]),
+                    float(i[7]),
+                    i[8],
+                )
             )
         return vend
 

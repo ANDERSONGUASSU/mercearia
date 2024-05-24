@@ -1,5 +1,10 @@
-maria|35956813348|199999999|rua 2| teste
-samuel|55555555555|999999999|123456456|asdfas
-samuel|33333333333|999999999|dasfas|dafsf
-ceci|11111111111|111111111|rua 5|dafsdfsa
-alguem|12345678936|123456789|TESTE |TESTE
+Lucas Martins|98765432100|11976543210|Avenida K 123|lucas.martins@email.com
+Mariana Costa|87654321011|21976543211|Avenida L 234|mariana.costa@email.com
+Ricardo Alves|76543210122|31976543212|Avenida M 345|ricardo.alves@email.com
+Patrícia Fernandes|65432101233|41976543213|Avenida N 456|patricia.fernandes@email.com
+Bruno Lima|54321012344|51976543214|Avenida O 567|bruno.lima@email.com
+Beatriz Moraes|43210123455|61976543215|Avenida P 678|beatriz.moraes@email.com
+Tiago Ribeiro|32101234566|71976543216|Avenida Q 789|tiago.ribeiro@email.com
+Larissa Silva|21012345677|81976543217|Avenida R 890|larissa.silva@email.com
+Felipe Gomes|10923456788|91976543218|Avenida S 901|felipe.gomes@email.com
+Aline Santos|09834567899|10197654319|Avenida T 012|aline.santos@email.com

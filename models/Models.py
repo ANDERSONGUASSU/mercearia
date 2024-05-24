@@ -22,12 +22,19 @@ class Estoque:
 
 class Venda:
     def __init__(
-        self, itensVendidos: Produtos, vendedor, comprador, quantidadeVendida, data=None
+        self,
+        itensVendidos: Produtos,
+        vendedor,
+        comprador,
+        quantidadeVendida,
+        valorTotal,
+        data=None,
     ):
         self.itensVendidos = itensVendidos
         self.vendedor = vendedor
         self.comprador = comprador
         self.quantidadeVendida = quantidadeVendida
+        self.valorTotal = valorTotal
         if data is not None:
             self.data = data
         else:
