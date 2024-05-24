@@ -16,6 +16,9 @@
 <h3>View:</h3>
 <p>Responsável pela interface gráfica, ou seja, o que o usuário vai ver. Aceitei o desafio proposto no curso Python Full e criei uma interface gráfica utilizando CustomTkinter (CTk). Além disso, estruturei o código em pastas para melhor organização.</p>
 
+<h3>Bonus:</h3>
+<p>Além da interface gráfica, desenvolvi um dashboard utilizando matplotlib, pandas e numpy. Esse dashboard permite visualizar de forma clara e interativa os dados do projeto, como as vendas por produto, quantidade de clientes, entre outros insights importantes. Utilizando essas bibliotecas, consegui criar gráficos informativos e detalhados que ajudam a compreender melhor os dados e tomar decisões informadas.</p>
+
 <h1>Como Iniciar o Projeto</h1>
 
 <h3>Criar o Ambiente Virtual</h3>
