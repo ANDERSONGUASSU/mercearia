@@ -32,14 +32,13 @@ class ControllerCliente:
 
         email_existe = any(cliente.email == email for cliente in self.clientes)
         if email_existe:
-            mensagem
+            mensagem = "Email já cadastrado no sistema!"
             print(mensagem)
             return False, mensagem
 
         novo_cliente = Pessoa(nome, cpf, telefone, endereco, email)
         DaoPessoas.salvar(novo_cliente)
         mensagem = "Cliente cadastrado com sucesso!"
-        self.atualizarArquivoCliente()
         print(mensagem)
         return True, mensagem
 

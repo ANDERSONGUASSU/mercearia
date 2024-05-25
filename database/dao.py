@@ -134,14 +134,17 @@ class DaoFornecedor:
 class DaoPessoas:
     @classmethod
     def salvar(cls, pessoas: Pessoa):
-        with open("./database/data/clientes.txt", "a") as arq:
-            arq.writelines(
-                f"{pessoas.nome}|"
-                f"{pessoas.cpf}|"
-                f"{pessoas.telefone}|"
-                f"{pessoas.endereco}|"
-                f"{pessoas.email}\n"
-            )
+        try:
+            with open("./database/data/clientes.txt", "a") as arq:
+                arq.write(
+                    f"{pessoas.nome}|"
+                    f"{pessoas.cpf}|"
+                    f"{pessoas.telefone}|"
+                    f"{pessoas.endereco}|"
+                    f"{pessoas.email}\n"
+                )
+        except Exception as e:
+            print(f"Erro ao salvar cliente: {e}")
 
     @classmethod
     def ler(cls):

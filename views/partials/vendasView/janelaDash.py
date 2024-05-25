@@ -122,7 +122,7 @@ def abri_janela_dash(self):
         50.0,
         135.0,
         anchor="nw",
-        text=f"R$ {vendas}",
+        text=f"R$ {vendas:.2f}",
         fill="#FFFFFF",
         font=("Inter Bold", 28),
     )

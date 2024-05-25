@@ -1,9 +1,15 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 from database.dao import DaoEstoque, DaoVenda, DaoPessoas
 from models.Models import Venda, Produtos
 from datetime import datetime
 from matplotlib.figure import Figure
+
+
+def gerador_cores(n):
+    cores = plt.get_cmap('hsv', n)
+    return [cores(i) for i in range(n)]
 
 
 class ControllerVenda:
@@ -148,13 +154,9 @@ class ControllerVenda:
         produtos_quantidade_vendida["angle"] = np.linspace(
             0, 2 * np.pi, len(produtos_quantidade_vendida), endpoint=False
         )
-        produtos_quantidade_vendida["color"] = [
-            "deepskyblue",
-            "salmon",
-            "limegreen",
-            "gold",
-            "purple",
-        ][: len(produtos_quantidade_vendida)]
+
+        num_cores = len(produtos_quantidade_vendida)
+        produtos_quantidade_vendida["color"] = gerador_cores(num_cores)
 
         # gráfico polar
         fig_2 = Figure(figsize=(3.8, 3), facecolor="#917FB3")

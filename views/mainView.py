@@ -11,9 +11,8 @@ class MainView:
     def __init__(self, root):
         self.root = root
         self.root.title("Gerenciamento de Mercearia")
-        root.geometry("1024x1600")
-        root.minsize(1024, 1600)
-        root.maxsize(1920, 1920)
+        root.geometry("1024x900")
+
 
         self.tabview = ctk.CTkTabview(root)
         self.tabview.pack(expand=1, fill="both")
